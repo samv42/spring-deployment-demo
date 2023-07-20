@@ -19,7 +19,7 @@ public class SpringDeploymentDemoApplication extends SpringBootServletInitialize
 	public CommandLineRunner loadInitialData(HelloRepository helloRepository) {
 		return (args) -> {
 			if (helloRepository.findAll().size() == 0) {
-				helloRepository.save(new Hello("CodingNomads"));
+				helloRepository.save(new Hello("CodingNomads 2"));
 			}
 		};
 	}
